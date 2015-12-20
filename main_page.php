@@ -3,7 +3,6 @@
 	mysql_select_db("phplogin"); //select database
 	$namecheck = mysql_query("SELECT `lastname`, `firstname`, `email`, `username` FROM `users`");
 	if (!$namecheck) die(mysql_error());
-	$query = mysqli_query();
 	$count = mysql_fetch_array($namecheck);
 	echo '<table>
 		<tr>
